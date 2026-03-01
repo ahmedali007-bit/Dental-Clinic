@@ -14,7 +14,6 @@ justify-content:center;
 align-items:center;
 z-index:9999;
 }
-
 .spinner{
 width:50px;
 height:50px;
@@ -23,7 +22,6 @@ border-top:6px solid #0d6efd;
 border-radius:50%;
 animation:spin 1s linear infinite;
 }
-
 @keyframes spin{
 100%{transform:rotate(360deg);}
 }
@@ -31,11 +29,22 @@ animation:spin 1s linear infinite;
 /* Hero */
 .hero{
 height:100vh;
-background:linear-gradient(135deg,#0d6efd,#6610f2);
+
+/* Gradient Overlay + Image */
+background:
+linear-gradient(rgba(13,110,253,0.75), rgba(102,16,242,0.75)),
+url('background.png');
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 padding-top:80px;
+color:#fff;
 }
 
 /* Counter */
@@ -43,23 +52,35 @@ padding-top:80px;
 background:#f8f9fa;
 padding:60px 0;
 }
-
 .counter{
 font-size:40px;
 font-weight:700;
 color:#0d6efd;
 }
 
-/* Cards */
+/* Services */
 .service-card{
 background:white;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.4s;
 }
-
+.service-card img{
+height:200px;
+width:100%;
+object-fit:cover;
+transition:0.4s;
+}
+.service-content{
+padding:20px;
+text-align:center;
+}
 .service-card:hover{
 transform:translateY(-10px);
+}
+.service-card:hover img{
+transform:scale(1.05);
 }
 
 .section-title{
@@ -67,27 +88,143 @@ color:#0d6efd;
 font-weight:700;
 }
 
-.doctor-card{
-max-width:350px;
-padding:30px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.doctor-card img{
-width:150px;
-height:150px;
-border-radius:50%;
-object-fit:cover;
-margin-bottom:20px;
-}
-
+/* Map */
 .map-container{
 border-radius:20px;
 overflow:hidden;
 box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
+/* WhatsApp */
+.whatsapp-btn{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+border-radius:50%;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+z-index:9999;
+transition:0.3s;
+text-decoration:none;
+animation:float 2s ease-in-out infinite;
+}
+.whatsapp-btn:hover{
+transform:scale(1.1);
+background:#1ebe5d;
+color:white;
+}
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0px);}
+}
+
 footer{
 background:#0d6efd;
+}
+
+/* Appointment Section Background */
+.appointment-section{
+padding:100px 0;
+background:linear-gradient(135deg,#e0f2ff,#f8f9ff);
+position:relative;
+overflow:hidden;
+}
+
+/* Glass Card */
+.appointment-card{
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(15px);
+padding:50px;
+border-radius:25px;
+box-shadow:0 20px 60px rgba(0,0,0,0.08);
+position:relative;
+transition:0.4s;
+}
+
+.appointment-card:hover{
+transform:translateY(-5px);
+}
+
+/* Floating Input Style */
+.form-group{
+position:relative;
+margin-bottom:30px;
+}
+
+.form-group input,
+.form-group textarea{
+width:100%;
+padding:14px 14px 14px 45px;
+border-radius:12px;
+border:1px solid #ddd;
+outline:none;
+font-size:15px;
+background:transparent;
+transition:0.3s;
+}
+
+.form-group i{
+position:absolute;
+top:15px;
+left:15px;
+color:#0d6efd;
+font-size:18px;
+}
+
+/* Floating Label */
+.form-group label{
+position:absolute;
+top:14px;
+left:45px;
+color:#888;
+font-size:14px;
+pointer-events:none;
+transition:0.3s;
+background:white;
+padding:0 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+border-color:#0d6efd;
+box-shadow:0 0 10px rgba(13,110,253,0.2);
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:valid + label,
+.form-group textarea:valid + label{
+top:-8px;
+font-size:12px;
+color:#0d6efd;
+}
+
+/* Button */
+.appointment-btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:50px;
+background:linear-gradient(135deg,#0d6efd,#6610f2);
+color:white;
+font-weight:600;
+font-size:16px;
+transition:0.4s;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+}
+
+.appointment-btn:hover{
+transform:scale(1.05);
+box-shadow:0 15px 30px rgba(13,110,253,0.3);
 }
