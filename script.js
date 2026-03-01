@@ -1,11 +1,30 @@
-// Initialize AOS Animation
-AOS.init({
-    duration: 1000,
-    once: true
+// Loader
+window.addEventListener("load", function(){
+document.getElementById("loader").style.display="none";
 });
 
-// Navbar background change on scroll
-window.addEventListener("scroll", function () {
-    const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("shadow", window.scrollY > 50);
+// AOS
+AOS.init({
+duration:1000,
+once:true
+});
+
+// Counter Animation
+const counters=document.querySelectorAll(".counter");
+
+counters.forEach(counter=>{
+counter.innerText='0';
+const updateCounter=()=>{
+const target=+counter.getAttribute('data-target');
+const c=+counter.innerText;
+const increment=target/200;
+
+if(c<target){
+counter.innerText=`${Math.ceil(c+increment)}`;
+setTimeout(updateCounter,10);
+}else{
+counter.innerText=target;
+}
+};
+updateCounter();
 });
