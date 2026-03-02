@@ -96,7 +96,7 @@ a:active, a:hover {
   outline: 0 none;
 }
 a:hover, a:focus {
-    color: #003cc4;
+    color: #70939c;
     text-decoration: none;
 }
 .pt10{
@@ -214,12 +214,12 @@ header{
 /* header Area
 /*----------------------------------------*/
 .logo h1{
-    color:#1273cc;
+    color:#70939c;
     margin: 0;
     font-size: 21px;
 }
 .logo span{
-    background: #007ced;
+    background: #70939c;
     color: #fcf8e3;
     padding: 0px 5px;
     margin-left: 7px;
@@ -347,7 +347,7 @@ h1 {
 }
 #slider3-pager .rslides_here a {
     background: transparent;
-    border: 2px solid #247ae6;
+    border: 2px solid #70939c;
 }
 #slider3-pager a {
     padding: 0px;
@@ -362,7 +362,7 @@ h1 {
 .slider-content h2{
     font-size: 39px;
     text-transform: uppercase;
-    color: #247ae6;
+    color: #70939c;
     letter-spacing: 3px;
     margin-bottom: 20px;
 }
@@ -370,19 +370,19 @@ h1 {
     color:#545454;
 }
 .comn-btn{
-    background: #247ae6;
+    background: #70939c;
     padding: 10px 20px;
     color: #fff;
     border-radius: 19px;
 }
 .bg-color-1{
-    background:#5b84f8;
+    background:#70939c;
 }
 .bg-color-2{
-    background:#ffd943;
+    background:#70939c;
 }
 .bg-color-3{
-    background:#06d2ff;
+    background:#70939c;
 }
 /*----------------------------------------*/
 /* services Area
@@ -450,7 +450,7 @@ h1 {
 }
 .info li img{
     margin-right: 15px;
-    background: #007ced;
+    background: #70939c;
     padding: 5px;
 }
 .contat-form{
@@ -497,7 +497,7 @@ h1 {
 /* counter Area
 /*----------------------------------------*/
 #counter{
-    background: #5b84f8;
+    background: #70939c;
 }
 .counter{
     text-align: center;
@@ -532,7 +532,7 @@ h1 {
     margin: 15px 0px;
 }
 .counter .counter-value{
-    color: #3B9CC9;
+    color: #70939c;
     font-size: 33px;
     font-weight: 700;
     display: block;
@@ -580,7 +580,7 @@ h1 {
     line-height: 28px;
     font-size: 15px;
     font-weight: 900;
-    color: #5b84f8;
+    color: #70939c;
     text-align: center;
     position: absolute;
     top: 20px;
@@ -658,7 +658,7 @@ h1 {
     width: 12px;
     height: 12px;
     border-radius: 20px;
-    background: #f3904d;
+    background: #70939c;
     margin: 5px 7px;
     opacity: 0.5;
 }
@@ -671,14 +671,14 @@ h1 {
 }
 #contact{
     padding: 30px 0px;
-    background: #5b84f8;
+    background: #70939c;
 }
 #contact h3{
     color: #fff;
     margin-top: 17px;
 }
 .contact-btn a{
-    color: #5b84f8;
+    color: #70939c;
     border: 1px solid #fff;
     padding: 10px 30px;
     border-radius: 24px;
@@ -738,11 +738,11 @@ h1 {
     text-align: justify;
 }
 .page-bg{
-    background: #5b84f8;
+    background: #70939c;
     padding: 20px 0px;  
 }
 .box{
-    background: linear-gradient(180deg, #5b84f8 0%, #03A9F4 100%);
+    background: linear-gradient(180deg, #70939c 0%, #03A9F4 100%);
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
@@ -911,11 +911,11 @@ h1 {
     margin-right: 5px;
     width: 35px;
     height: 35px;
-    background: #007ced;
+    background: #70939c;
     transition: 0.4s;
 }
 .footer-icons ul li a:hover{
-    color: #003cc4;
+    color: #70939c;
     background: transparent;
      transition: 0.4s
 }
@@ -966,7 +966,7 @@ h1 {
     transition: 0.4s;
 }
 .footer-contacts p span {
-    color: #003cc4;
+    color: #70939c;
     font-weight: 700;
 }
 .footer-content {
@@ -1008,7 +1008,7 @@ h1 {
 }
 .copyright-text a:hover{
     text-decoration: underline;
-    color:#003cc4;
+    color:#70939c;
 }
 .copyright-text a {
     color: #ddd;
@@ -1018,7 +1018,7 @@ h1 {
     color: #000;
 }
 .copyright a {
-    color: #003cc4;
+    color: #70939c;
 }
 .copyright{
     margin-top: 5px;
